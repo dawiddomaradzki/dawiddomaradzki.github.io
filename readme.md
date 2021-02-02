@@ -2,12 +2,12 @@
 
 # Dawid Domaradzki Personal Website
 
-
 This website has been built as a final project of "WTF co ten frontend" course.
+
 ## To create website I've used
 
 -Visual Studio Code  
--Gulp  
+-Webpack  
 -SASS  
 -Fetch API  
 -CSS Grid
