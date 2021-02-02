@@ -1,0 +1,87 @@
+.skills {
+    padding-bottom: 168px;
+    margin: 0 auto;
+    max-width: 1216px;
+
+    &__header {
+        margin: 0 0 0 16px;
+        padding: 1rem 0 1rem;
+        border-bottom: 2px solid $grey;
+        font-size: 2.25rem;
+        line-height: 3rem;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+    }
+}
+
+.type {
+    display: grid;
+    padding-top: 128px;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0 0;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        width: 379px;
+
+        &::before {
+            content: "";
+            width: 80px;
+            height: 4px;
+            display: block;
+            background: #06c847;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            .type__purple & {
+                background: #653cad;
+            }
+            .type__blue & {
+                background: #2251cc;
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 26px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
+    }
+
+    &__item {
+        font-weight: 300;
+        list-style: none;
+        font-size: 1.125rem;
+        line-height: 2.5rem;
+        position: relative;
+        padding-left: 1.375rem;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0.6875rem;
+            left: 0;
+            height: 1.125rem;
+            width: 1.125rem;
+            background-size: contain;
+            background-image: url("../assets/img/okgreen.svg");
+            .type__purple & {
+                background-image: url("../assets/img/okpurple.svg");
+            }
+            .type__blue & {
+                background-image: url("../assets/img/okblue.svg");
+            }
+        }
+    }
+}

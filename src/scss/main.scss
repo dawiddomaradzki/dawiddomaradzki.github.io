@@ -2,12 +2,42 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import "person.scss";
+@import "skills.scss";
+@import "projects.scss";
+@import "contact.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  background: $white;
+  color: $bigStone;
+  border: 16px solid $bigStone;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media (max-width: $mobile) {
+    border: none;
+  }
+}
+
+.container {
+  max-width: 1216px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
