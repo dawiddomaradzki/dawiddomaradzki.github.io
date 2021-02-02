@@ -23,7 +23,7 @@ fetch('https://api.github.com/users/dawiddomaradzki/repos?sort=updated')
 
        <li class="project">
             <div class="project__container">
-              <img src="src/assets/img/githubpurple.svg" alt="github photo">
+            <img src="../img/githubpurple.de42a557.svg" alt="github photo">
               <h3 class="project__title">${name}</h3>
               ${
                 description ? `<p class="project__description">${description}</p>` : 'No description'
