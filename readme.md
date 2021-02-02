@@ -12,8 +12,6 @@ This website has been built as a final project of "WTF co ten frontend" course.
 -Fetch API  
 -CSS Grid
 
-## Available scripts
-
 ## built with wtf-webpack-starter
 
   
