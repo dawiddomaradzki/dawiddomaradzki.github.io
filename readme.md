@@ -1,18 +1,20 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![Dawid Domaradzki Personal Website](src/assets/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# Dawid Domaradzki Personal Website
 
-Simple toolkit for your static websites development.
+This website has been built as a final project of "WTF co ten frontend" course.
 
-## How to use it?
+## To create website I've used
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+-Visual Studio Code  
+-Webpack  
+-SASS  
+-Fetch API  
+-CSS Grid
 
-## Available scripts
+## built with wtf-webpack-starter
 
-`npm run start` - runs development mode
+  
 
-`npm run build` - runs build process for production
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
 
